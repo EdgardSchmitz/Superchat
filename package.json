@@ -1,0 +1,24 @@
+{
+    "name": "superchat-1",
+    "version": "1.0.0",
+    "description": "Página criada para bate papo entre pessoas com afinidades para conversar sobre quadrinhos e desenhos.",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/EdgardSchmitz/Superchat.git"
+    },
+    "keywords": [],
+    "author": "Edgard Schmitz Silva",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/EdgardSchmitz/Superchat/issues"
+    },
+    "homepage": "https://github.com/EdgardSchmitz/Superchat#readme",
+    "dependencies": {
+        "ejs": "^3.1.6",
+        "express": "^4.17.2"
+    }
+}

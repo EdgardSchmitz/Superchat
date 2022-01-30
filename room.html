@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="style/room.css">
+    <link rel="stylesheet" href="style/global.css">
+    <link rel="stylesheet" href="style/modal.css">
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Barlow+Semi+Condensed:wght@200&family=Cormorant+SC:wght@300;400;500&family=EB+Garamond&family=Open+Sans&family=Overlock&family=Poppins:wght@400;500;700&family=Source+Code+Pro:wght@300&display=swap"
+        rel="stylesheet">
+    <title>SuperChat - Perguntas e Respostas</title>
+</head>
+
+<body>
+    <div id="room" class="content">
+
+        <header>
+            <a href=""><img src="asset/logo.png" alt="logo de supereroi"></a>
+
+            <div class="buttons">
+                <div class="button outlined">
+                    #323243
+                    <img src="asset/2-quadrados.png" alt="copiar numero da sala">
+                </div>
+
+                <a href="" class="button">
+                    <img src="asset/pessoas.png" alt="criar uma sala"> Criar Sala
+                </a>
+
+
+            </div>
+        </header>
+
+        <main>
+            <section id="question-form">
+                <h2>Faça sua pergunta </h2>
+                <form action="">
+                    <label class="sr-only" for="question">O que você quer perguntar?</label>
+                    <textarea name="question" id="question" placeholder="O que você quer perguntar?"></textarea>
+                    <footer>
+                        <div>
+                            <img src="asset/lock.png" alt="cadeado"> Esta pergunta e anônima
+                        </div>
+                        <button>Enviar</button>
+                    </footer>
+                </form>
+            </section>
+            <section id="questions">
+                <h2 class="sr-only">Perguntas da comunidade</h2>
+                <div class="questions">
+
+                    <div class="question-wrapper">
+                        <div class="question-content">
+                            <div class="user">
+                                <img src="asset/homem-aranha.png" alt="avatar">
+                            </div>
+                            <div class="question">
+                                <p>Qual a diferença dos poderes entre o Superman e o Shazam?</p>
+                            </div>
+                        </div>
+                        <div class="actions">
+                            <a href="#" class="check">
+                                <img src="asset/verifica.png" alt=""> Marcar como lida
+                            </a>
+                            <a href="#" class="delete">
+                                <img src="asset/lixeira.png" alt=""> Excluir
+                            </a>
+                        </div>
+                    </div>
+                    <div class="question-wrapper">
+                        <div class="question-content">
+                            <div class="user">
+                                <img src="asset/homem-aranha.png" alt="avatar">
+                            </div>
+                            <div class="question">
+                                <p>Qual a diferença dos poderes entre o Superman e o Shazam? em um universo paralelo, quem seria um Deus que dominaria a Terra entre esses dois?</p>
+                            </div>
+                        </div>
+                        <div class="actions">
+                            <a href="#" class="check">
+                                <img src="asset/verifica.png" alt=""> Marcar como lida
+                            </a>
+                            <a href="#" class="delete">
+                                <img src="asset/lixeira.png" alt=""> Excluir
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="question-wrapper">
+                        <div class="question-content">
+                            <div class="user">
+                                <img src="asset/homem-aranha.png" alt="avatar">
+                            </div>
+                            <div class="question">
+                                <p>Quem viverá mais, Wolverine ou DeadPool?</p>
+                            </div>
+                        </div>
+                        <div class="actions">
+                            <a href="#" class="check">
+                                <img src="asset/verifica.png" alt=""> Marcar como lida
+                            </a>
+                            <a href="#" class="delete">
+                                <img src="asset/lixeira.png" alt=""> Excluir
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="question-wrapper read">
+                        <div class="question-content">
+                            <div class="user">
+                                <img src="asset/homem-aranha.png" alt="avatar">
+                            </div>
+                            <div class="question">
+                                <p>Quais são os utilitários do cinto do Batman?</p>
+                            </div>
+                        </div>
+                        <div class="actions">
+                            <a href="#" class="delete">
+                                <img src="asset/lixeira.png" alt=""> Excluir
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!--Modal-->
+    <div class="modal-wrapper">
+        <div class="modal">
+            <h2>Excluir Pergunta</h2>
+            <p>Tem certeza que você deseja excluir esta perguntar?</p>
+            <form action="#">
+                <label class="sr-only" for-id="password">Digite sua senha admin</label>
+                <input type="password" id="password" name="password" placeholder="Digite sua senha">
+                <div class="buttons">
+                    <div class="button grey">Cancelar</div>
+                    <button class="button red">Sim, excluir</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
